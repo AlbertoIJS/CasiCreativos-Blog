@@ -2,10 +2,10 @@
 title: Fantastic Beasts and Where to Find Them
 date: 2019-11-01
 tags:
-  - Novel
+  - Feminismo
 ---
 
-import SpotifyPlayer from "./SpotifyPlayer";
+import SpotifyPlayer from './SpotifyPlayer';
 
 Here will a React component go:
 
@@ -20,7 +20,7 @@ Here will a live code example go:
 
 ```js react-live
 const onClick = () => {
-  alert("You opened me");
+  alert('You opened me');
 };
 render(<button onClick={onClick}>Alohomora!</button>);
 ```
@@ -52,7 +52,7 @@ var treePromise = new Promise(function(resolve) {
 Code block with code highlighting:
 
 ```jsx:title=src/components/post.jsx {5-7,10}
-import React from "react";
+import React from 'react';
 
 const Post = ({ data: { post } }) => (
   <Layout>
@@ -79,7 +79,7 @@ const Post = ({ data: { post } }) => (
       sx={{
         ...CodeStyles,
         my: 5,
-        ".gatsby-resp-image-wrapper": { my: 5, boxShadow: `lg` },
+        '.gatsby-resp-image-wrapper': { my: 5, boxShadow: `lg` },
       }}
     >
       <MDXRenderer>{post.body}</MDXRenderer>
@@ -124,10 +124,10 @@ Line highlighting without code title:
 
 ```js {2,4-5}
 const test = 3;
-const foo = "bar";
-const harry = "potter";
-const hermione = "granger";
-const ron = "weasley";
+const foo = 'bar';
+const harry = 'potter';
+const hermione = 'granger';
+const ron = 'weasley';
 ```
 
 Here will `inline code` go, just inside the text. Wow!
@@ -135,7 +135,7 @@ Here will `inline code` go, just inside the text. Wow!
 Code block without line numbers but with highlighting, language, and title:
 
 ```tsx:title=src/components/blog.tsx {7-9,16} noLineNumbers
-import React from "react";
+import React from 'react';
 
 const Blog = ({ posts }: PostsProps) => {
   const { tagsPath, basePath } = useSiteMetadata();

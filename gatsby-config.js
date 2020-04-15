@@ -1,10 +1,17 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Casi Creativos`,
+    siteTitleAlt: `Blog Casi Creativos`,
+    siteHeadline: `Blog Casi Creativos - Blog`,
+    siteUrl: `https://www.casicreativos.com`,
+    siteDescription: `Blog de Casi Creativos, sobre feminismo, tecnologia y arte.`,
+    siteLanguage: `es`,
+    siteImage: `/banner.jpg`,
+    author: `@AlbertoIJS`,
   },
   plugins: [
     {
@@ -12,22 +19,42 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
+            title: `Inicio`,
+            slug: `/`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `Feminismo`,
+            slug: `/tags/feminismo`,
           },
+          {
+            title: `Tecnologia`,
+            slug: `/tags/tecnologia`,
+          },
+          {
+            title: `Salud Mental`,
+            slug: `/tags/salud-mental`,
+          },
+          // {
+          //   title: `Sobre Nosotros`,
+          //   slug: `/about`,
+          // },
         ],
         externalLinks: [
           {
+            name: `Facebook`,
+            url: `https://www.facebook.com/CasiCreativos/`,
+          },
+          {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/casicreativos`,
           },
           {
             name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://www.instagram.com/casicreativos`,
+          },
+          {
+            name: `Pinterest`,
+            url: `https://www.pinterest.com/casicreativos`,
           },
         ],
       },
@@ -65,6 +92,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-theme-ui`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
-}
+};
