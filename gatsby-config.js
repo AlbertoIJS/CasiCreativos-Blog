@@ -27,7 +27,7 @@ module.exports = {
             slug: `/tags/feminismo`,
           },
           {
-            title: `Tecnologia`,
+            title: `Tecnología`,
             slug: `/tags/tecnologia`,
           },
           {
