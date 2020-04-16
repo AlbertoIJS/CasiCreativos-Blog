@@ -34,10 +34,6 @@ module.exports = {
             title: `Salud Mental`,
             slug: `/tags/salud-mental`,
           },
-          // {
-          //   title: `Sobre Nosotros`,
-          //   slug: `/about`,
-          // },
         ],
         externalLinks: [
           {
