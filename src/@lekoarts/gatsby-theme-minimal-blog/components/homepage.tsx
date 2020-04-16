@@ -29,7 +29,7 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <Title text="Últimos Artículos">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Ver más</Link>
+        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Ver todos</Link>
       </Title>
       <Listing posts={posts} showTags={false} />
     </Layout>

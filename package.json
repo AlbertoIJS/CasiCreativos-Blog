@@ -29,7 +29,9 @@
     "gatsby-plugin-theme-ui": "^0.3.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "theme-ui": "^0.3.1"
+    "theme-ui": "^0.3.1",
+    "typeface-bebas-neue": "^1.1.3",
+    "typefaces": "^0.0.1"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",

@@ -2,6 +2,8 @@
 import { jsx, useColorMode, Styled } from 'theme-ui';
 import { Link } from 'gatsby';
 import { Flex } from '@theme-ui/components';
+import 'typeface-bebas-neue';
+
 import useSiteMetadata from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata';
 import useMinimalBlogConfig from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config';
 import ColorModeToggle from '@lekoarts/gatsby-theme-minimal-blog/src/components/colormode-toggle';
@@ -26,7 +28,14 @@ const Header = () => {
           aria-label={`${siteTitle} - Back to home`}
           sx={{ color: `heading`, textDecoration: `none` }}
         >
-          <h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [4, 5] }}>
+          <h1
+            sx={{
+              my: 0,
+              fontWeight: `medium`,
+              fontSize: [5, 6],
+              fontFamily: 'Bebas Neue',
+            }}
+          >
             {siteTitle}
           </h1>
         </Link>

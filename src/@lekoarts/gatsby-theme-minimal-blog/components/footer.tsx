@@ -11,18 +11,20 @@ const Footer = () => {
       sx={{
         boxSizing: 'border-box',
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         mt: [6],
         color: 'secondary',
         a: {
           variant: 'links.secondary',
         },
-        flexDirection: ['column', 'column', 'row'],
+        flexDirection: 'column',
         variant: 'dividers.top',
+        textAlign: 'center',
       }}
     >
       <div>
-        Copyrigth&copy; {new Date().getFullYear()} {siteTitle}.
+        Copyrigth &copy; {new Date().getFullYear()} {siteTitle} - TODOS LOS
+        DERECHOS RESERVADOS.
       </div>
 
       <Styled.a>
