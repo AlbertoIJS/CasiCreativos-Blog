@@ -19,7 +19,6 @@ const Footer = () => {
         },
         flexDirection: 'column',
         variant: 'dividers.top',
-        textAlign: 'center',
       }}
     >
       <div>

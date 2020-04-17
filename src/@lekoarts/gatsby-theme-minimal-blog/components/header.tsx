@@ -5,14 +5,15 @@ import { Flex } from '@theme-ui/components';
 import 'typeface-bebas-neue';
 
 import useSiteMetadata from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata';
-import useMinimalBlogConfig from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config';
+import useMinimalBlogConfig from '../hooks/use-minimal-blog-config';
 import ColorModeToggle from '@lekoarts/gatsby-theme-minimal-blog/src/components/colormode-toggle';
 import Navigation from '@lekoarts/gatsby-theme-minimal-blog/src/components/navigation';
 import replaceSlashes from '@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes';
+import Icons from './social-icons';
 
 const Header = () => {
   const { siteTitle } = useSiteMetadata();
-  const { navigation: nav, externalLinks, basePath } = useMinimalBlogConfig();
+  const { navigation: nav, basePath } = useMinimalBlogConfig();
   const [colorMode, setColorMode] = useColorMode();
   const isDark = colorMode === `dark`;
   const toggleColorMode = (e: any) => {
@@ -55,17 +56,7 @@ const Header = () => {
         }}
       >
         <Navigation nav={nav} />
-        {externalLinks && externalLinks.length > 0 && (
-          <div
-            sx={{ 'a:not(:first-of-type)': { ml: 3 }, fontSize: [1, `18px`] }}
-          >
-            {externalLinks.map((link) => (
-              <Styled.a key={link.url} href={link.url}>
-                {link.name}
-              </Styled.a>
-            ))}
-          </div>
-        )}
+        <Icons />
       </div>
     </header>
   );

@@ -35,24 +35,6 @@ module.exports = {
             slug: `/tags/salud-mental`,
           },
         ],
-        externalLinks: [
-          {
-            name: `Facebook`,
-            url: `https://www.facebook.com/CasiCreativos/`,
-          },
-          {
-            name: `Twitter`,
-            url: `https://twitter.com/casicreativos`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/casicreativos`,
-          },
-          {
-            name: `Pinterest`,
-            url: `https://www.pinterest.com/casicreativos`,
-          },
-        ],
       },
     },
     {
