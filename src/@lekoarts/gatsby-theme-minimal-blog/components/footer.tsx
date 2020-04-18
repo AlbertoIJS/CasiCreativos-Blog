@@ -91,7 +91,7 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section sx={{ marginTop: '1.2rem' }}>
+        <section sx={{ marginTop: '1.2rem', order: '-1' }}>
           <Icons />
         </section>
       </div>
@@ -104,6 +104,7 @@ const Footer = () => {
             margin: 'auto',
             '@media screen and (max-width: 768px)': {
               width: '80%',
+              margin: '1.3rem auto',
             },
           }}
         >
@@ -115,6 +116,9 @@ const Footer = () => {
               fontWeight: 400,
               borderBottom: '2px solid #000',
               margin: 'auto 0',
+              '@media screen and (max-width: 768px)': {
+                fontSize: '1.5rem',
+              },
             }}
           >
             {siteTitle.toUpperCase()}
